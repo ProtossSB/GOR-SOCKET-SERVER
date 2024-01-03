@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-from server import kaspad_client, sio
+from server import gord_client, sio
 
 BLOCKS_CACHE = []
 TASKS = []
@@ -34,7 +34,7 @@ async def config():
 
         await sio.emit("new-block", emit_info, room="blocks")
 
-    await kaspad_client.notify("notifyBlockAddedRequest", None, on_new_block)
+    await gord_client.notify("notifyBlockAddedRequest", None, on_new_block)
 
 
 @sio.on("last-blocks")

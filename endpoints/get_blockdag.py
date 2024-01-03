@@ -1,11 +1,11 @@
 # encoding: utf-8
 
-from server import kaspad_client
+from server import gord_client
 
 
 async def get_blockdag():
     """
-    Get some global Kaspa BlockDAG information
+    Get some global gor BlockDAG information
     """
-    resp = await kaspad_client.request("getBlockDagInfoRequest")
+    resp = await gord_client.request("getBlockDagInfoRequest")
     return resp["getBlockDagInfoResponse"]

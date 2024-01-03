@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\docker",
+    "\\endpoints",
+    "\\Gord",
+    "\\Gord\\protos",
+    "\\helper",
+    "\\sockets"
+  ],
+  "SelectedNode": "\\endpoints\\__init__.py",
+  "PreviewInSolutionExplorer": false
+}
